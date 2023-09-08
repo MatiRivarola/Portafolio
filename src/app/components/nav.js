@@ -1,8 +1,7 @@
 'use client'
 import { color } from "framer-motion";
-import Link from "next/link";
 import React from "react";
-
+import { useRouter } from "next/router";
 import {
     HiHome,
     HiUser,
@@ -45,7 +44,7 @@ const Nav = () => {
                     const isSelected = selectButton === link.name;
                     
                     return (
-                    <Link  
+                    <button  
                     href={link.path} 
                     key={index}
                     onClick={() => handleSelectButton (link.name)}
@@ -58,7 +57,7 @@ const Nav = () => {
                             </div>
                         </div>
                         <div>{link.icon}</div>
-                    </Link>
+                    </button>
                 )})}
             
             </div>
