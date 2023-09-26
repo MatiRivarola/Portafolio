@@ -13,7 +13,7 @@ export default function ParticlesContainer(){
   
   return(
     <Particles 
-    className="w-full h-full absolute translate-z-0"
+    className="w-full h-full abosulte translate-z-0"
     id='tsparticles' 
     init={particlesInit} 
     loaded={particlesLoaded}
@@ -42,7 +42,7 @@ export default function ParticlesContainer(){
             quantity:90,
           },
           repulse: {
-            distance: 100,
+            distance: 90,
             duration: 0.4,
           },
         },
