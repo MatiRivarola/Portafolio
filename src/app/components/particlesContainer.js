@@ -13,7 +13,7 @@ export default function ParticlesContainer(){
   
   return(
     <Particles 
-    className="w-full h-full abosulte translate-z-0"
+    className="w-full h-full "
     id='tsparticles' 
     init={particlesInit} 
     loaded={particlesLoaded}
@@ -49,10 +49,10 @@ export default function ParticlesContainer(){
       },
       particles:{
         color:{
-          value:'#e68e2e'
+          value:'#fff',
         },
         links:{
-          color:'#fff',
+          color:'#B7CADB',
           distance:150,
           enable:true,
           opacity: 0.5,

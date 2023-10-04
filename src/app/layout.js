@@ -26,9 +26,8 @@ export default function RootLayout({ children }) {
       <body className={sora.className}>
         <AnimationLayout>
           <AnimatePresencesLayout>
-              <Transition/>
-              <ParticlesContainer/>
-              {children}
+            <Transition/>
+            {children}
           </AnimatePresencesLayout>
            
         </AnimationLayout>
