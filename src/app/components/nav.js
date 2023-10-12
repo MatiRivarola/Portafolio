@@ -38,7 +38,6 @@ const Nav = () => {
       <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full">
         {navData.map((link) => {
           const isSelected = pathname === link.path
-          
           return (
             <Link
               href={link.path}

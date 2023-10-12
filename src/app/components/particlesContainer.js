@@ -13,7 +13,7 @@ export default function ParticlesContainer(){
   
   return(
     <Particles 
-    className="w-full h-full "
+    className="w-full h-full absolute translate-z-0 opacity-70"
     id='tsparticles' 
     init={particlesInit} 
     loaded={particlesLoaded}
@@ -76,7 +76,7 @@ export default function ParticlesContainer(){
             enable:true,
             area:800,
           },
-          value:100,
+          value:90,
 
         },
         opacity:{

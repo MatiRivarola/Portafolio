@@ -9,6 +9,7 @@ export default function HomeClient(){
     <div className="container text-center mb-28 h-full w-full p-4 sm:p-0 z-20">
       <div className="flex flex-col m-2 justify-center item-center w-full h-full">
 
+        <ParticlesContainer/>
         <div className="flex justify-center items-center w-full sm:w-auto">
           <motion.div
           initial={{opacity:0, scale:0}}
@@ -20,7 +21,7 @@ export default function HomeClient(){
           }}
           className='p-4 relative'
           >
-            <Image src="/perfil-icon.jpg" width="192" height="192" quality="92" alt='Profile photo' priority={true} className='h-16 sm:h-24 w-16 sm:w-24 rounded-full shadow-md border-white' />
+            <Image src="/foto-perfil.jpg" width={220} height={220} quality="92" alt='Profile photo' priority={true} className='sm:h-24  sm:w-24 rounded-full shadow-md border-white' />
 
             <motion.span className="absolute top-0 right-0 text-xl"
             initial={{opacity:0, scale:0}}

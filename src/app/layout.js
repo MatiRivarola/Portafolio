@@ -15,7 +15,6 @@ export const metadata = {
 import Transition from './components/transition'
 import AnimationLayout from './components/Animationlayout'
 import AnimatePresencesLayout from './components/Animate-presence'
-import ParticlesContainer from './components/particlesContainer'
 
 
 export default function RootLayout({ children }) {
