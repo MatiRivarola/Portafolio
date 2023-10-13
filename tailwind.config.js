@@ -6,11 +6,6 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    container: {
-      padding: {
-        DEFAULT: "15px",
-      },
-    },
     extend: {
       colors: {
         primary: '#131424',
@@ -32,11 +27,6 @@ module.exports = {
         sora: [`var(--font-sora)`, 'sans-serif'],
       },
     },
-    container: {
-      padding: {
-        DEFAULT: "15px",
-      },
-    }
   },
   plugins: [require('tailwind-scrollbar')],
 }

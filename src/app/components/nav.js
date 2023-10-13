@@ -1,5 +1,4 @@
 "use client";
-import { color } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {
