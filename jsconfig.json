@@ -4,6 +4,7 @@
       "@/*": ["./src/*"],
       "@/public":["./public/*"],
       "@/context":["./src/app/context/*"],
+      "@components/*":["./src/app/components/*"]
     }
   }
 }

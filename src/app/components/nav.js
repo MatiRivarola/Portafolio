@@ -41,7 +41,7 @@ const Nav = () => {
             <Link
               href={link.path}
               key={link.name}
-              as=
+              prefetch={false}
               className={`text-${
                 isSelected ? "accent " : "white "
               } relative flex items-center group hover:text-accent transition-all duration-300`}

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import {Progress} from "@nextui-org/react";
 import { motion } from "framer-motion";
+
 export default function AboutClient() {
 
   return(
@@ -16,16 +17,7 @@ export default function AboutClient() {
             I'm interested in the new technologies and create software of quality
           </h1>
         </div>
-        <motion.span className="absolute top-0 right-0 text-xl"
-        initial={{opacity:0, scale:0}}
-        animate={{opacity:1, scale:1}}
-        transition={{
-          type:'spring',
-          stiffness:125,
-          delay:0.9,
-          duration: 1 ,
-        }}
-        >👋</motion.span>
+        
         <h1></h1>
       </div>
       <div className="flex flex-col  flex-auto items-start gap-3 xl:gap-6 self-center p-3 xl:p-3 m-3 xl:m-3">
