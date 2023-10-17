@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { HiArrowRight } from 'react-icons/hi2';
 
-function MovingWordsCircle() {
+function AboutButton() {
   return (
     <div className='mx-auto xl:mx-0'>
       <Link href={'/pages/about'} className='relative w-[185px] h-[185px] flex justify-center items-center  bg-circleStar bg-no-repeat bg-cover bg-center group'>
@@ -22,4 +22,4 @@ function MovingWordsCircle() {
   );
 }
 
-export default MovingWordsCircle;
+export default AboutButton;
