@@ -1,43 +1,205 @@
-'use client'
-import Image from "next/image";
-import {Progress} from "@nextui-org/react";
+"use client";
+import React, { useState } from "react";
+import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiFirebase,
+  SiJavascript,
+  SiNpm,
+  SiNotion,
+} from "react-icons/si";
+import Profile from "./Profile";
 import { motion } from "framer-motion";
+import { fadeIn } from "../utils/variants";
+import CountUp from "react-countup";
+
+
+const aboutData = [
+  {
+    title: 'skills',
+    info: [
+      {
+        title: 'Web Development',
+        icons: [
+          <FaHtml5 />,
+          <FaCss3Alt />,
+          <SiJavascript />,
+          <FaReact />,
+          <SiNextdotjs />,
+        ],
+      },
+    ],
+  },
+  {
+    title: 'awards',
+    info: [
+      {
+        title: 'Webby Awards - Honoree',
+        stage: '2011 - 2012',
+      },
+      {
+        title: 'Adobe Design Achievement Awards - Finalist',
+        stage: '2009 - 2010',
+      },
+    ],
+  },
+  {
+    title: 'experience',
+    info: [
+      {
+        title: 'UX/UI Designer - XYZ Company',
+        stage: '2012 - 2023',
+      },
+      {
+        title: 'Web Developer - ABC Agency',
+        stage: '2010 - 2012',
+      },
+      {
+        title: 'Intern - DEF Corporation',
+        stage: '2008 - 2010',
+      },
+    ],
+  },
+  {
+    title: 'credentials',
+    info: [
+      {
+        title: 'Web Development - ABC University, LA, CA',
+        stage: '2011',
+      },
+      {
+        title: 'Computer Science Diploma - AV Technical Institute',
+        stage: '2009',
+      },
+      {
+        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
+        stage: '2006',
+      },
+    ],
+  },
+];
+ 
 
 export default function AboutClient() {
+  const [index, setIndex] = useState(0);
+  return (
+    <div className="w-full h-full py-32 text-center xl:text-left">
+      <motion.div
+        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+      >
+        <Profile />
+      </motion.div>
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+        {/* text */}
+        <motion.div 
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="flex-1 flex flex-col justify-center">
+          <motion.h2 
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="h2">
+            Captivating <span className="text-accent">stories</span> birth magnificent design.
+          </motion.h2>
+          <motion.p 
+          variants={fadeIn("right", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">2 year ago , I change my carrer of Enginner Industrial and i apply to study Full-Stack developer whit JavaScript and </motion.p>
+          {/* counter  */}
+          <motion.div 
+          variants={fadeIn("right", 0.6)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
+            <div className="flex flex-1 xl:gap-x-6">
+              {/* Experience */}
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
 
-  return(
-    <div className="w-full h-full">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={1} duration={5}/> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Year of experience</div>
+              </div>
 
-      <div className="relative">
-        <div className='text-xl xl:text-xl'>
-          <h1 className="p-2 ">
-            Hi, I'm Matias Rivarola and I Full<span className="text-accent">Stack</span> developer whit Javascript
-          </h1>
-          <h1 className="p-1">
-            I'm interested in the new technologies and create software of quality
-          </h1>
+              {/* client */}
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={5} duration={5}/> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Satisfied client</div>
+              </div>
+
+              {/* projects */}
+              <div className="relative flex-1">
+
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={15} duration={5}/> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Winning experience</div>
+              </div>
+
+              
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={1} duration={8}/> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Year of experience</div>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+
+        <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+            {aboutData.map((item, itemIndex) => {
+              return (
+                <div
+                  key={itemIndex}
+                  className={`${index === itemIndex && 'text-accent '} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  onClick={() => setIndex(itemIndex)}
+                >
+                  {item.title}
+                </div>
+              );
+            })}
+          </div>
+          <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+            {aboutData[index].info.map((item,itemIndex)=>{
+              return (
+                <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60 ">
+                  <div className="font-light mb-2 md:mb-0">
+                    {item.title}
+                  </div>
+                  <div className="hidden md:flex ">-</div>
+                  <div>
+                    {item.stage}
+                  </div>
+                  
+                  {item.icons?.map((icon,itemIndex)=>{
+                    return(
+                      <div className="text-2xl">{icon}</div>
+                    )
+                  })}
+                </div>
+              )
+            })}
+          </div>
         </div>
-        
-        <h1></h1>
-      </div>
-      <div className="flex flex-col  flex-auto items-start gap-3 xl:gap-6 self-center p-3 xl:p-3 m-3 xl:m-3">
-        <h2 className="text-xl xl:text-2xl">Tec<span className="text-accent">nologys</span>:</h2>
-        
-        <div>
-        <Image src="/icon-js.svg" width={50}  height={50} loading="eager" alt=' Rivarola Matias'/>
-        </div>
-        <div>
-        <Image src="/icon-twcss.svg" priority width={50}  height={50} loading="eager" alt='Tecnologias ofrecidas por Rivarola Matias' />
-        </div>
-        <div>
-        <Image src="/icon-html.svg" width={50}  height={50} loading="eager" alt='Tecnologias ofrecidas pors'/>
-        </div>
-        <div>
-          <Image src="/icon-react.svg" width={50} height={50} loading="eager" alt='Tecnologias ofola Matias'/>
-        </div>
-        <Image src="/icon-npm.svg" width={50} height={50} loading="eager" alt='Tecnologias ofr Matias'/>
-        <Image src='/icon-github.svg' width={50} height={50} loading="eager" alt="Git hub Matias Rivarola"/>
       </div>
     </div>
-  )
+  );
 }

@@ -9,7 +9,6 @@ function AboutButton() {
       <Link
         className="relative w-[185px] h-[185px] flex justify-center items-center  bg-circleStar bg-no-repeat bg-cover bg-center group"
         href={"/pages/about"}
-        as="/page/about"
       >
         <Image
           src={"/aboutme1.svg"}

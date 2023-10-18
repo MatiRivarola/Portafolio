@@ -8,7 +8,7 @@ export default function Profile() {
         priority
         width={700}
         height={700}
-        alt="Profile photo"
+        alt="Profile photo Matias Rivarola rivarola matias"
         className="translate-z-0 w-full h-full"
       />
     </div>

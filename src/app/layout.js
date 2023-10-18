@@ -1,6 +1,6 @@
 import './styles/globals.css'
-import Transition from '@components/transition'
-import AnimatePresencesLayout from '@components/Animate-presence'
+// import Transition from '@components/transition'
+// import AnimatePresencesLayout from '@components/Animate-presence'
 import Nav  from '@components/nav'
 import { sora } from './utils/fonts'
 import  Header from '@components/header'
@@ -17,14 +17,14 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={`${sora.className} page bg-site text-white bg-cover bg-no-repeat font-so
+      <body className={`${sora.className} page bg-black text-white bg-cover bg-no-repeat font-so
      relative`}>
-        <AnimatePresencesLayout>
+        {/* <AnimatePresencesLayout> */}
+          {/* <Transition/> */}
           <Nav/>
           <Header/>
-          <Transition/>
           {children}
-        </AnimatePresencesLayout>
+        {/* </AnimatePresencesLayout> */}
       </body>
     </html>
   )
