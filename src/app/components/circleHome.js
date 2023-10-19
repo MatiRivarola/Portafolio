@@ -9,6 +9,7 @@ function AboutButton() {
       <Link
         className="relative w-[185px] h-[185px] flex justify-center items-center  bg-circleStar bg-no-repeat bg-cover bg-center group"
         href={"/pages/about"}
+        prefetch={false}
       >
         <Image
           src={"/aboutme1.svg"}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Profile() {
   return (
-    <div className="hidden xl:flex xl:max-w-none">
+    <div className="hidden xl:flex xl:max-w-none z-10">
       <Image
         src="/profilephoto.png"
         priority

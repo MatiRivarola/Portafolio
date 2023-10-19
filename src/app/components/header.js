@@ -14,6 +14,7 @@ const Header = () => {
                     width={220}
                     height={40}
                     alt="Matias Rivarola"
+                    priority
                     />
                 </Link>
                 <Social/>

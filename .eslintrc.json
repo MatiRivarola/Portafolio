@@ -1,6 +1,8 @@
 {
-  "extends": "next/core-web-vitals , next-babel",
+  "extends": "next/core-web-vitals , next-babel , eslint:recommended",
   "rules": {
-    "react/no-unescaped-entities": 0
+    "react/no-unescaped-entities": 0,
+    "semi": ["error", "always"],
+        "quotes": ["error", "double"]
   }
 }
