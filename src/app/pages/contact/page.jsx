@@ -1,3 +1,5 @@
+'use client'
+
 import { BsArrowRight } from "react-icons/bs";
 
 import { motion } from "framer-motion";
@@ -7,8 +9,8 @@ import { fadeIn } from "@/app/utils/variants";
 export default function ContactPage() {
   return (
     <div className="h-full bg-primary/30">
-      <div className="container mx-auto py-32 text-accent xl:text-left flex items-center justify-center h-full">
-        <div className="flex flex-col w-full max-w-[700px] bg-pink-500/10">
+      <div className="container mx-auto py-32 text-white xl:text-left flex items-center justify-center h-full">
+        <div className="flex flex-col w-full max-w-[700px] bg-[#0e0d0a4a]">
           <motion.h2 
           variants={fadeIn('up',0.2)}
           initial='hidden'

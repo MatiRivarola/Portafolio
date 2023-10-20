@@ -6,8 +6,8 @@ import { sora } from "./utils/fonts";
 import Header from "@components/header";
 
 export const metadata = {
-  title: "Portafolio Matias",
-  description: "Portafolio de Matias Rivarola",
+  title: "Portfolio Web Developer",
+  description: "Portfolio web developer Rivarola Matias, using Next.js and react",
 };
 
 export default function RootLayout({ children }) {

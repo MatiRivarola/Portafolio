@@ -8,6 +8,12 @@ import {
   SiJavascript,
   SiNpm,
   SiNotion,
+  SiGit,
+  SiGithub,
+  SiFigma,
+  SiUbuntu,
+  SiFramer,
+  
 } from "react-icons/si";
 import Profile from "./Profile";
 import { motion } from "framer-motion";
@@ -16,64 +22,51 @@ import CountUp from "react-countup";
 
 const aboutData = [
   {
-    title: "skills",
+    title: "Tecnology",
     info: [
       {
-        title: "Web Development",
+        title: "Frontend",
         icons: [
           <FaHtml5 />,
           <FaCss3Alt />,
           <SiJavascript />,
+          <SiTailwindcss />,
           <FaReact />,
           <SiNextdotjs />,
+          <SiFirebase/>
         ],
       },
+      
     ],
   },
   {
-    title: "awards",
+    title: "Tools",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "WorkFlow",
+        icons: [
+          <SiNpm/>,
+          <SiNotion/>,
+          <SiGit/>,
+          <SiGithub/>,
+          <SiFramer/>,
+          <SiFigma/>,
+          <SiUbuntu/>,
+        ],
       },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
+      
     ],
   },
   {
-    title: "experience",
+    title: "Carrer",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Industrial Engginer",
+        stage: "2019 - 2022",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
-  {
-    title: "credentials",
-    info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Full Stack Developer whit JavaScript",
+        stage: "2022 - 2023.   Platzi",
       },
     ],
   },
@@ -84,7 +77,7 @@ export default function AboutClient() {
   return (
     <div className="w-full h-full py-32 text-center xl:text-left">
       <motion.div
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[243px] w-[80%] h-[80%]"
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
@@ -99,7 +92,7 @@ export default function AboutClient() {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex-1 flex flex-col justify-center"
+          className="flex-1 flex flex-col justify-center z-20"
         >
           <motion.h2
             variants={fadeIn("right", 0.2)}
@@ -118,8 +111,8 @@ export default function AboutClient() {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            2 year ago , I change my carrer of Enginner Industrial and i apply
-            to study Full-Stack developer whit JavaScript and{" "}
+            My name is Matías Rivarola, and I'm a full-stack web developer who is deeply passionate about every single line of code I craft. With a background in Engineering, I dove headfirst into web development to find not just solutions but also art and meaning. I'm eager to contribute to trailblazing teams and continue my lifelong learning journey. My ambition? To become an unparalleled web developer, bringing a fresh and enthusiastic lens to tackle the ever-changing challenges of the digital world. If you're searching for a developer who pairs creativity with reliability, look no further—I am your ideal candidate.
+
           </motion.p>
           {/* counter  */}
           <motion.div
@@ -141,14 +134,14 @@ export default function AboutClient() {
               </div>
 
               {/* client */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={5} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied client
                 </div>
-              </div>
+              </div> */}
 
               {/* projects */}
               <div className="relative flex-1">
@@ -156,16 +149,16 @@ export default function AboutClient() {
                   <CountUp start={0} end={15} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning experience
+                  Projects
                 </div>
               </div>
 
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={1} duration={8} /> +
+                  <CountUp start={0} end={14} duration={8} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Year of experience
+                  Used Technology
                 </div>
               </div>
             </div>
