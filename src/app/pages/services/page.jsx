@@ -25,7 +25,7 @@ export default function ServicePage(){
           exit='hidden'
           className="mb-4 max-w-[400px] mx-auto lg:mx-0">
             Innovation for your bussines and create the new changes
-            in the wordl
+            in the world
           </motion.p>
         </div>
         <motion.div 

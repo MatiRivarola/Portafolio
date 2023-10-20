@@ -10,35 +10,33 @@ import {
   RxRocket,
   RxArrowTopRight,
 } from "react-icons/rx";
+import {
+  BsDatabase
+} from 'react-icons/bs'
 
 import {FreeMode , Pagination} from 'swiper/modules';
 
 // data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Using the most up-to-date components for build your web',
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Creating custom websites',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Use keywords that match the search intentions of your target audience',
+  },
+  {
+    icon: <BsDatabase />,
+    title: 'Database',
+    description: 'Creating your database',
   },
 ];
 

@@ -158,7 +158,7 @@ export default function AboutClient() {
                   <CountUp start={0} end={14} duration={8} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Used Technology
+                  Technologys
                 </div>
               </div>
             </div>
