@@ -16,10 +16,8 @@ export default function HomeClient() {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="h1">Matias Rivarola</motion.h1>
-              <h2 className="h2">
-                Full<span className="text-accent">Stack</span> Developer
-              </h2>
+                className="h1">Full<span className="text-accent">Stack</span> Developer</motion.h1>
+
               <motion.p variants={fadeIn("down", 0.3)}
                 initial="hidden"
                 animate="show"

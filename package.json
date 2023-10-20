@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.1.13",
+    "@vercel/analytics": "^1.1.1",
     "autoprefixer": "10.4.15",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",

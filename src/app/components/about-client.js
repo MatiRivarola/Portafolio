@@ -111,8 +111,7 @@ export default function AboutClient() {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            My name is Matías Rivarola, and I'm a full-stack web developer who is deeply passionate about every single line of code I craft. With a background in Engineering, I dove headfirst into web development to find not just solutions but also art and meaning. I'm eager to contribute to trailblazing teams and continue my lifelong learning journey. My ambition? To become an unparalleled web developer, bringing a fresh and enthusiastic lens to tackle the ever-changing challenges of the digital world. If you're searching for a developer who pairs creativity with reliability, look no further—I am your ideal candidate.
-
+            I'm Matías Rivarola, a full-stack web developer with an engineering background. Passionate about coding, I aim to bring both art and solutions to web development. I'm looking to join innovative teams and continue learning. My goal is to excel in web development while tackling the digital world's evolving challenges. I offer a unique blend of creativity and reliability.
           </motion.p>
           {/* counter  */}
           <motion.div
