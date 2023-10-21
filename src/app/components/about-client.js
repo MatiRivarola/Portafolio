@@ -85,7 +85,7 @@ export default function AboutClient() {
       >
         <Profile />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 overflow-y-auto xl:overflow-visible">
         {/* text */}
         <motion.div
           variants={fadeIn("right", 0.2)}
@@ -190,7 +190,7 @@ export default function AboutClient() {
               return (
                 <div
                   key={itemIndex}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60 "
+                  className="flex-1 flex md:flex-row max-w-max gap-x-2 items-center text-white/60 "
                 >
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex ">-</div>

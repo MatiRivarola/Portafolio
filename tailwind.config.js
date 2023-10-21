@@ -6,6 +6,12 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '960px',
+      xl: '1200px',
+    },
     extend: {
       colors: {
         primary: '#131424',
@@ -25,6 +31,11 @@ module.exports = {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
         sora: [`var(--font-sora)`, 'sans-serif'],
       },
+    },
+  },
+  container: {
+    padding: {
+      DEFAULT: '15px',
     },
   },
   plugins: [require('tailwind-scrollbar')],
