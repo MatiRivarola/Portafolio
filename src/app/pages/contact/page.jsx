@@ -20,7 +20,7 @@ export default function ContactPage() {
             Let's <span className="text-accent">connect.</span>
           </motion.h2>
           <motion.form 
-          action={`https://formspree.io/f/${process.env.FORM_ID}`}
+          action={`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORM_ID}`}
           method="POST"
           variants={fadeIn('up',0.4)}
           initial='hidden'
