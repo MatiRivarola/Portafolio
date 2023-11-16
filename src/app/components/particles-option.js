@@ -57,7 +57,7 @@ export const particlesOption = {
         enable:true,
         area:800,
       },
-      value:70,
+      value:80,
 
     },
     opacity:{
