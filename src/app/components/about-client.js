@@ -19,6 +19,7 @@ import Profile from "./Profile";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import CountUp from "react-countup";
+import useTranslation from 'next-translate/useTranslation';
 
 const aboutData = [
   {
@@ -73,6 +74,7 @@ const aboutData = [
 ];
 
 export default function AboutClient() {
+  const { t } = useTranslation('common')
   const [index, setIndex] = useState(0);
   return (
     <div className="w-full h-full py-32 text-center xl:text-left">
@@ -100,9 +102,7 @@ export default function AboutClient() {
             animate="show"
             exit="hidden"
             className="h2"
-          >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent design.
+          >{t("about-title1")}<span className="text-accent">{t("about-title2")}</span>{t("about-title3")}
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -111,7 +111,7 @@ export default function AboutClient() {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            I'm Matías Rivarola, a full-stack web developer with an engineering background. Passionate about coding, I aim to bring both art and solutions to web development. I'm looking to join innovative teams and continue learning. My goal is to excel in web development while tackling the digital world's evolving challenges. I offer a unique blend of creativity and reliability.
+            {t("about-description")}
           </motion.p>
           {/* counter  */}
           <motion.div
@@ -128,7 +128,7 @@ export default function AboutClient() {
                   <CountUp start={0} end={1} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Year of experience
+                  {t("about-info1")}
                 </div>
               </div>
 
@@ -148,7 +148,7 @@ export default function AboutClient() {
                   <CountUp start={0} end={15} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Projects
+                  {t("about-info2")}
                 </div>
               </div>
 
@@ -157,7 +157,7 @@ export default function AboutClient() {
                   <CountUp start={0} end={14} duration={8} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Technologys
+                  {t("about-info3")}
                 </div>
               </div>
             </div>

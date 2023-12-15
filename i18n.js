@@ -3,8 +3,7 @@ module.exports = {
   defaultLocale: 'es', // El idioma predeterminado
   pages: {
     '*': ['common'],
-    '/ruta-especifica': ['namespace-specifico']
   },
   loadLocaleFrom: (lang, ns) =>
-    import(`./locales/${lang}/${ns}.json`).then((m) => m.default),
+    import(`./src/app/locales/${lang}/${ns}.json`).then((m) => m.default),
 };

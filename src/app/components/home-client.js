@@ -4,7 +4,7 @@ import ParticlesContainer from "./particlesContainer";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/app/utils/variants";
 import Profile from "./Profile"
-import useTranslation from "next-translate"
+import useTranslation from 'next-translate/useTranslation';
 
 export default function HomeClient() {
   const { t } = useTranslation('common')
@@ -25,8 +25,9 @@ export default function HomeClient() {
                 animate="show"
                 exit="hidden"
                 className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16" >
-                {t('titlehome1')}{" "}
-                <span className="font-bold text-accent">{t('titlehome2')}</span>{t('titlehome3')}
+                  {t("title-home1")}
+                <span className="font-bold text-accent">{t('title-home2')}</span> 
+                {t('title-home3')}
               </motion.p>
               <div className="flex justify-center xl:hidden relative">
                 <AboutButton />
