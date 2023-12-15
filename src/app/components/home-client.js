@@ -4,8 +4,10 @@ import ParticlesContainer from "./particlesContainer";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/app/utils/variants";
 import Profile from "./Profile"
+import useTranslation from "next-translate"
 
 export default function HomeClient() {
+  const { t } = useTranslation('common')
   return (
     <>
       <div className="container h-full w-full z-20">
@@ -23,9 +25,8 @@ export default function HomeClient() {
                 animate="show"
                 exit="hidden"
                 className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16" >
-                The software and ideas change the{" "}
-                <span className="font-bold text-accent">world.</span> Everything
-                is possible.
+                {t('titlehome1')}{" "}
+                <span className="font-bold text-accent">{t('titlehome2')}</span>{t('titlehome3')}
               </motion.p>
               <div className="flex justify-center xl:hidden relative">
                 <AboutButton />
