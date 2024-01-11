@@ -1,14 +1,3 @@
-<<<<<<< Updated upstream
-
-
-export default function SwitcherLanguage(){
-  
-
-  return(
-
-  )
-}
-=======
 'use client'
 import { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
@@ -39,4 +28,3 @@ export default function LanguageSwitcher() {
     </Button>
   );
 }
->>>>>>> Stashed changes
