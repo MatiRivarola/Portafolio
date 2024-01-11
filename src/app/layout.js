@@ -5,6 +5,8 @@ import Nav from "@components/nav";
 import { sora } from "./utils/fonts";
 import Header from "@components/header";
 import { Analytics } from '@vercel/analytics/react';
+import LanguageSwitcher from "./components/languajeswitcher";
+
 
 export const metadata = {
   title: "Portfolio Web Developer",
@@ -22,6 +24,7 @@ export default function RootLayout({ children }) {
         {/* <Transition/> */}
         <Nav />
         <Header />
+        <LanguageSwitcher/>
         {children}
         {/* </AnimatePresencesLayout> */}
         <Analytics/>
